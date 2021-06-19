@@ -104,10 +104,8 @@ h3{
 
 
 .intro-content{
-    height: 60vh;
     display: flex;
     flex-direction: column;
-   
 }
 
 .content{
@@ -126,7 +124,6 @@ h3{
 }
 
 .greeting{
-
     color: white;
     font-size: 1rem;
     margin-top: 4rem;
@@ -198,12 +195,12 @@ h3{
     }    
 }
 .icon-container{
-    margin-top: 3rem;
+    margin-top: 5rem;
     margin-left: -.7rem; 
 }
 
 .icon-container svg{
-    width: .9rem;
+    width: .8rem;
     margin-left: .7rem;
 }
 
@@ -231,38 +228,23 @@ h3{
 
 
 .prog-content, .art-content{
-    margin-top: 15rem;
+    margin-top: 12rem;
 }
 
-.languages{
+.languages, .my-projects{
     margin-top: 3rem;
 }
 
-
-.lang-icons{
-    margin-left: -2rem; 
+.langs span{
+    color: #F6D13F;
+    font-size: 1em;
 }
 
-.lang-icons img{
-    margin-left: 2.05rem;
-    width: 2rem;
+.my-projects h2{
+    font-size: .5rem;
+    color: #fff;
 }
 
-.langs p{
-    margin-right: 2.5rem;
-}
-
-.langs{
-    display: flex;
-}
-
-.my-projects{
-    margin-top: 5rem;
-}
-
-.prog-projects{
-    margin-top: 2rem;
-}
 
 
 .proj1, .proj2{
@@ -283,13 +265,10 @@ h3{
 
 }
 
-
-
 .proj1-img, .proj2-img{
     background-size: cover;
     width: 100vw;
     color: #FFF;
-  
     box-shadow: rgb(0, 0, 0) 0px 10px 15px -10px;
 }
 
@@ -297,7 +276,7 @@ h3{
 
 .carousel{
     position: relative;
-    margin: 5rem auto;
+    margin: 3rem auto;
     width: calc(816px * 0.35);
     height: calc(3600px * 0.125);
 }
@@ -337,7 +316,7 @@ h3{
 
 
 .ending{
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(imgs/proj.jpg) center no-repeat;
+    background-color: #101010;
     width: 100vw;
     background-size: cover;
     padding: 2rem;
@@ -345,8 +324,14 @@ h3{
     font-size: 1.5rem;
 }
 
+.ending span{
+    font-weight: 700;
+    color: #F6D13F;
+
+}
+
 .rights{
     display: flex;
     justify-content: center;
-    background-color: gray;
+    background-color: #7A7A7A;
 }
