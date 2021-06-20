@@ -69,6 +69,7 @@ h3{
 
 .bar{
     width: 20rem;
+    margin-top: -2.4rem;
     fill:none;
     stroke: white;
     stroke-width: 2px;
@@ -92,7 +93,6 @@ h3{
 
 .brand{
     position: relative;
-    top: 2.45rem;
 }
 .name{
     font-size: .6rem;
