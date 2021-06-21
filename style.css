@@ -208,15 +208,15 @@ h3{
 
 .greeting span::before{
     background: #F6D13F;
-    animation: typewriter 1s steps(12) 4.5s forwards;
+    animation: typewriter  1.5s steps(12) 4.5s forwards;
 }
 
 .greeting span::after{
-    width: 0.05em;
+    width: 0.07em;
     background: #101010;
     animation: 
-        typewriter 1s steps(12) 4.5s forwards,
-        blinker 0.75s steps(12) 3s infinite;
+        typewriter 1.5s steps(12) 4.5s forwards,
+        blinker 1s steps(12) 3s infinite;
 
 }
 
