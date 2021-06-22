@@ -1,23 +1,12 @@
-var paths = document.querySelectorAll("svg path"),
-    i = 0;
+const carouselSlide = document.querySelector('.carousel-slide');
+const carouselImgs = document.querySelectorAll('.carousel-slide img');
 
-paths.forEach(function(item, index){
+// buttons
+const prevBtn = document.querySelector('.left-btn');
+const nextBtn = document.querySelector('.right-btn');
 
-        i++;
-    var pathLength = item.getTotalLength();
-        speed = 750;
+// counter
+let count = 1;
+const size = carouselImgs[0].clientWidth;
 
-    item.setAttribute("stroke-dasharray", pathLength);
-    item.setAttribute("stroke-dashoffset", pathLength);
-    
-    if(index == 0){
-        item.innerHTML = "<animate id='a" + i + "attributeName='stroke-dashoffset' begin='0s' dur='"
-        + pathLength/speed +"' to='0' fill='freeze' />";
-     
-    }else{
-        item.innerHTML = "<animate attributeName='stroke-dashoffset' begin='a" 
-        + (i-1) + ".end' dur='"+ pathLength/speed +"' to='0' fill='freeze' />";
-    }
-    console.log(index, pathLength, item.innerHTML)
-
-});
+carouselSlide.style.transform = 'translateX(' + (-size * count) + 'px)';
