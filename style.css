@@ -16,7 +16,7 @@ body{
 
 p{
     color: #EBEBEB;
-    font-size: .5rem;
+    font-size: .6rem;
     letter-spacing: 1.5px;
     line-height: 1.3rem;
     max-width: 13rem;
@@ -143,11 +143,21 @@ h2::after{
     margin-top: 50vh;
     height: 50vh;
     width: 100vw;
-    background-color: #111111;
+    background-color: #101010;
     opacity: 0;
     transform: scaleY(0);
     transform-origin: bottom;
     animation: animateSlide .7s 3s forwards;
+}
+
+.lower-half::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 2px;
+    height: 100px;
+    background-color: #F6D13F;
+    margin-left: 1rem;
 }
 
 @keyframes animateSlide {
@@ -287,7 +297,7 @@ h2::after{
     position: absolute;
     top: -11rem;
     right: -4rem;
-    animation: floating 3s infinite ease;
+    /* animation: floating 3s infinite ease; */
     overflow: hidden;
     transition: transform 200ms ease;
     /* box-shadow: rgba(255, 255, 255, 0.4) 4px 4px, rgba(243, 243, 243, 0.3) 7px 7px, rgba(253, 236, 236, 0.2) 10px 10px; */
@@ -295,7 +305,7 @@ h2::after{
 
 .pics-box{
     position: absolute;
-    top: -9.5rem;
+    top: -9.8rem;
     right: -4.5rem;
     width: 25%;
     z-index: 1;
@@ -434,8 +444,11 @@ h2::after{
     .greeting span{
         font-size: 3.5rem;
     }
+    .greeting p{
+        line-height: 3rem;
+      }
+
     p{
-        font-size: .6rem;
         max-width: 14rem;
     }
 
@@ -465,7 +478,9 @@ h2::after{
       
     }
     .pics-box{
-        width: 27%;
+        margin-top: 0.5rem;
+        margin-right: -.3rem;
+
     }
 
     @keyframes slide {
@@ -598,12 +613,12 @@ h2::after{
     }
 
     .img-box, .pics-box{
-        margin-right: 0rem;
         margin-top: -7rem;
         width: 20%;
     }
     .pics-box{
         margin-top: -5rem;
+        margin-right: -0.5rem;
 
     }
 
@@ -624,6 +639,11 @@ h2::after{
         }
     }
 
+    .lower-half::after{
+        margin-left: 8rem;
+    }
+    
+
     .carousel-slide img{
         width: 15%;
     }
@@ -632,4 +652,12 @@ h2::after{
         margin-top: 8rem;
     }
     
+    .greeting span{
+        font-size: 8rem;
+    }
+    .greeting p{
+        color: #101010;
+        line-height: 5rem;
+      }
+  
 }
