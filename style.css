@@ -138,7 +138,7 @@ h2::after{
 }
 
 .lower-half{
-    z-index: 1;
+    z-index: 2;
     position: absolute;
     margin-top: 50vh;
     height: 50vh;
@@ -367,8 +367,7 @@ h2::after{
 
 .proj1, .proj2{
     margin: 1rem 0;
-    background-color: #101010;
-    background: linear-gradient(rgb(10, 10, 10, 1), rgba(10, 10, 10, 0.1));
+    background: #292929;
     box-shadow: rgb(0, 0, 0) 0px 10px 15px -10px;
 }
 
@@ -412,19 +411,25 @@ h2::after{
     }
 }
 
-.ending{
+.ending-bg{
     margin-top: 10rem;
-    width: 100vw;
+    width: 100%;
     background-size: cover;
-    background-color: #101010;
+    background-color: #292929;
     padding: 2rem;
     color: #F6D13F;
     font-size: 1rem;
+
 }
 
+.ending{
+    margin-inline: auto;
+    width: min(80%, 70.5rem);
+}
 .ending span{
     font-weight: 700;
     color: #F6D13F;
+
 }
 
 .rights{
@@ -432,7 +437,6 @@ h2::after{
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    
 }
 
 .rights p{
@@ -594,7 +598,7 @@ h2::after{
    
     p{
         line-height: 35px;
-        font-size: 1rem;
+        font-size: .8rem;
         max-width: 25rem;
         letter-spacing: 2.5px;
     }
@@ -613,11 +617,11 @@ h2::after{
     }
 
     .img-box, .pics-box{
-        margin-top: -7rem;
-        width: 20%;
+        margin-top: -3rem;
+        width: 15%;
     }
     .pics-box{
-        margin-top: -5rem;
+        margin-top: -1.5rem;
         margin-right: -0.5rem;
 
     }
@@ -653,11 +657,11 @@ h2::after{
     }
     
     .greeting span{
-        font-size: 8rem;
+        font-size: 6rem;
     }
     .greeting p{
         color: #101010;
-        line-height: 5rem;
+        line-height: 4rem;
       }
   
 }
